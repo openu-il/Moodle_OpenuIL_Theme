@@ -1,0 +1,142 @@
+/*******************************************************************
+ styles_layout.css
+
+ This CSS file contains all layout definitions like positioning,
+ floats, margins, padding, borders etc.
+
+ Styles are organised into the following sections:
+  core
+  forms
+  header
+  footer
+
+  admin
+  blocks
+  blog
+  calendar
+  course
+  doc
+  grades
+  login
+  message
+  notes
+  mymoodle
+  question
+  tabs
+  tags
+  user
+
+  various modules
+
+*******************************************************************/
+
+
+.navbar {
+    padding-right:0px !important;
+   padding-left:0px !important;
+ 
+}
+
+
+#course-view .section td.right {
+padding-right:2px  !important;
+padding-left:2px  !important;
+ width:10px !important;
+ }
+
+#course-view .section td.left {
+padding-right:2px  !important;
+padding-left:3px  !important;
+ width:15px !important;
+ }
+
+
+
+
+#course-view .section .spacer {
+  height:0.2em !important;
+}
+
+
+.tabrow0 div,
+.tabrow0 ul {
+ 
+  border-top: 1px solid #4799d3 !important;
+    padding: 0,0,0, 0 !important;
+background-image:none;
+ 
+}
+.tabrow0 a:hover {
+  background-image: url(pix/tab/left_hover.gif);
+     padding: 0,0,0, 0 !important;
+}
+
+.generalbox#intro{
+	 width:90% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+background-color:#F0F0F0;
+border-width:4px;
+border-color:#cccccc;
+ padding-bottom:0 !important;
+  padding-top:0 !important;
+
+}
+
+/* there is no chage but  the gifs should be read from ouil directory*/
+
+.tabrow0 a span {
+  padding: 10px 14px 0.35em 0;
+  background: transparent url(pix/tab/right.gif) no-repeat right top;
+}
+
+.tabrow1 li a span {
+  background: none !important;
+}
+
+.tabrow0 a {
+  text-decoration: none;
+  background: transparent url(pix/tab/left.gif) no-repeat left top;
+  margin: 0 -1px 0 0;
+  padding: 10px 0 0.35em 13px;
+  
+}
+
+.tabrow0 a:hover {
+  background-image: url(pix/tab/left_hover.gif);
+}
+
+.tabrow0 .here a:hover {
+  background-image: url(pix/tab/left.gif);
+}
+
+.tabrow0 a:hover span {
+  background-image: url(pix/tab/right_hover.gif);
+}
+
+.tabrow0 .here a:hover span {
+  background-image: url(pix/tab/right.gif);
+}
+
+
+
+
+body.mod-resource div.generalbox{
+
+	 width:580px !important;
+	 margin-top:20px;
+	 padding-right:40px;
+ 	 padding-left:40px;
+	 border:1px solid #CBCBCB !important;
+
+
+	 background-color:white !imporant;
+}
+
+
+#message-user .userpicture,
+#message-history .userpicture {
+/*  yifatsho openu 2/2011 remove the   */
+width: 35px !important;
+  height: 35px !important;
+}

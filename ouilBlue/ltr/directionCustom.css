@@ -1,0 +1,425 @@
+
+
+td.tableHeaderR{
+background:url(../images/logoopenglish.jpg)  right no-repeat; 
+height:77px;
+
+}
+
+div.tableHeaderR{
+background:url(../images/logoopenglish.jpg)  right no-repeat; 
+width:205;
+height:77px;
+}
+
+td.tableHeaderC{
+	background:url(../images/headerback.jpg)  right;
+    background-repeat:repeat-x;     
+height:77px;
+text-align:left;
+padding-left:20px;
+}
+td.tableHeaderL{background:url(../images/pictureenglish.jpg)  left no-repeat;
+height:77px;
+}
+
+
+
+
+td.tableHeaderRMin{
+background:url(../images/logoop_min.jpg)  right no-repeat; 
+height:50px;
+width:35;
+}
+
+div.tableHeaderRMin{
+background:url(../images/logoop_min.jpg)  right no-repeat; 
+height:50px;
+width:35;
+}
+
+
+
+td.tableHeaderCMin{
+	background:url(../images/headerback_min.jpg)  right;
+    background-repeat:repeat-x;     
+	height:50px;
+}
+td.tableHeaderLMin{background:url(../images/pictureenglish_min.JPG)  left no-repeat;
+height:50px;
+}
+
+
+
+div.breadcrumb {
+	width:100%;
+	text-align:left;
+}
+
+div.breadcrumb   li{
+/*float:left;*/
+}
+
+DT.message {background:url(../images/icon_hodaot.gif) top left  no-repeat; padding:0 0 0 25px;}
+DT.newMessage {background:url(/blocks/ouil_news_items/pix/new_img.gif) top left  no-repeat; padding:0 0 0 25px;}
+
+
+
+/*********************/
+
+
+.sideblock .header .hide-show-image {
+   float:left;
+}
+.sideblock  div.commands {
+	float:right;
+	text-align:right !important;
+}
+
+
+
+tr.cps  .openSection{
+		background-position:right;
+}
+
+tr.cpsTest  .openSection{
+		background-position:right;
+}
+
+
+
+
+tr.cps  .closeSection{
+		background-position:right;
+}
+
+tr.cpsTest  .closeSection{
+		text-indent:12px;
+		background-position:right;
+}
+
+
+
+
+
+tr.cps2  .openSection{
+		background-position:right;
+}
+
+
+tr.cps2 .closeSection{
+		background-position: right;
+}
+
+
+
+tr.cpsFocus  .openSection{
+		background-position:right;
+}
+
+tr.cpsFocus  .closeSection{
+		background-position:right;
+}
+
+tr.cpsFocusTest  .openSection{
+		background-position:right;
+			text-indent:12px;
+}
+
+tr.cpsFocusTest  .closeSection{
+		background-position:right;
+		text-indent:12px;
+}
+
+
+/******                                    *********************/
+tr.cps .td_right {
+ background-image:url(../images/koteretDownleft.jpg);
+   background-position:top right;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cpsTest .td_right {
+   background-position:top right;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+
+
+tr.cps .td_left{
+
+ background-image:url(../images/koteretDownright.jpg);
+   background-position:top left;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cpsTest .td_left{
+   background-position:top left;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cps2 .td_right {
+
+	  background-image:url(../images/koteretDownleft.jpg);
+   background-position:top right;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cps2 .td_left{
+	 background-image:url(../images/koteretDownright.jpg);
+   background-position:top left;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+
+tr.cpsFocus .td_right {
+    background-image:url(../images/koteretDownleftRollOver.jpg);
+   background-position:top right;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cpsFocusTest .td_right {
+   background-position:top right;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+
+tr.cpsFocus .td_left{
+   background-image:url(../images/koteretDownrightRollOver.jpg);
+   background-position:top left;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+tr.cpsFocusTest .td_left{
+   background-position:top left;
+   background-repeat:no-repeat;
+    background-position:bottom;
+}
+
+
+
+
+/*-----------     */
+
+tr.cps  .openSection{
+		background-position:left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+
+
+tr.cps  .closeSection{
+		background-position: left !important;
+			padding-left:1em;
+			padding-right:1em;
+}
+
+
+tr.cpsTest  .openSection{
+		background-position:left !important;
+		padding-left:1em;
+		padding-right:1em;
+		text-indent:12px;
+}
+
+
+
+tr.cpsTest  .closeSection{
+		background-position: left !important;
+			padding-left:1em;
+			padding-right:1em;
+}
+
+
+
+
+
+tr.cps2  .openSection{
+		background-position: left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+
+tr.cps2 .closeSection{
+		background-position: left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+
+tr.cpsFocus  .openSection{
+		background-position: left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+tr.cpsFocus  .closeSection{
+		background-position:left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+
+tr.cpsFocusTest  .openSection{
+		background-position: left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+tr.cpsFocusTest  .closeSection{
+		background-position: left !important;
+		padding-left:1em;
+		padding-right:1em;
+}
+
+
+
+
+
+span.current_section{
+background-position:left;
+	padding-right:1.5em;
+	margin-right:1.5em;
+}
+
+div.title h2{
+	margin-right:1.5em !important; 
+	margin-left:1em !important; 
+}
+
+#course-view .section td.right {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+#course-view .section td.left {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+
+#course-view .section td.middle {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-width: 1px;
+    border-right-style: solid;
+
+}
+a.navbarLinks {
+	border-left:1px solid gray ;
+	padding-right:5px;
+}
+
+
+
+div.news_items_container{
+	padding-left:5px;
+}
+
+
+
+#actionOnallSection{
+		text-decoration: none;
+		margin:0,0,0,0,0;
+		padding:0,0,0,0,0;
+		padding-bottom:2px;
+}
+
+/*  */
+td.td_center{
+padding-left:10px;
+padding-right:10px;
+
+}
+
+tr.cpsTest  td_center{
+padding-left:15px;
+padding-left:15px;
+}
+
+
+
+div.news_items dl{
+margin-left:3px;
+}
+
+div.news_items dd{
+margin-left:25px;
+}
+
+a.setAllsectionOpen{
+    background-position:left;
+}
+
+
+a.setAllsectionClose{
+  background-position:left;
+}
+
+
+
+
+
+ body {
+	text-align:center !important;
+}
+#openupage{
+	text-align:left !important;
+	}
+
+span.nonews{
+padding-left:25px;
+}
+
+td.navbarLinkstd{
+	width:100px;
+}
+
+td.middle_headerleft
+{
+background:url(../images/koteretlright.jpg);
+  }
+
+  td.middle_headerright
+{
+  background:url(../images/koteretleft.jpg);  
+ }
+
+ 
+div.book_content{
+text-align:left;
+}
+p.book_chapter_title{
+text-align:left;
+}
+
+div.book_toc_none{
+text-align:left;
+}
+
+div.headererrorouil{
+   background-position:top left;
+}
+
+
+td.oppositedir{
+text-align:right;
+}
+div.defaulttemplate{
+text-align:left;
+}

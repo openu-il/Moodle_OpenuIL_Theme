@@ -1,0 +1,29 @@
+ul.ouilHeaderLinks{
+	padding-top:0; margin-top:0;padding-bottom:0; margin-bottom:0;
+	font-size:0.8em;
+}
+ul.ouilHeaderLinks li{
+	list-style:none; 
+	display:inline;
+	padding-left:0.3em;
+}
+
+table.headerTable{
+	width:100%;
+	direction:rtl;
+}
+
+th.opuiltabletitle{
+  border: 1px solid white;
+}
+
+table.openutable{
+  border-collapse:collapse;
+}
+
+td.openutable{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 4px solid white;
+}

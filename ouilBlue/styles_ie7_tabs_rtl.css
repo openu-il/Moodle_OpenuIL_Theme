@@ -1,0 +1,174 @@
+/* ========================
+	for tabs support
+   ======================== */
+
+.tabrow0 {
+    PADDING-BOTTOM: 0.1em;
+}
+
+
+
+/* IE6 requires overflow: auto. IE7 requires overflow: hidden.
+   exploit IE's "star html selector bug" to apply to IE6 ONLY */
+.tabrow0 {
+overflow: hidden; /* for IE7. to eliminate extra scroll bars . the # hides from firefox */
+    /* html overflow: auto; /* for IE6 only **** */
+}
+
+.tabrow0  LI {
+    float: right;
+  MARGIN: 0,0,0,0 !important;
+  padding:0,0,0,0;
+    width: 105px;
+    BACKGROUND: url(pix/tab/rtlbg.gif) no-repeat right top;
+	overflow: hidden; /* for IE7. to prevent long titles from 'falling' 3cm down */
+}
+
+.tabrow0  li.first {
+margin-right:0px !important;
+}
+
+.tabrow0  a span {
+    padding: 10px 2px 0.35em 21px;
+    BACKGROUND: none;
+}
+
+.tabrow0 A {
+    PADDING: 0,0,0,0px important;
+    MARGIN: 0,0,0,0px important;
+    BACKGROUND-IMAGE: none;
+}
+
+
+.tabrow0 span {
+    PADDING: 0,0,0,0px important;
+    MARGIN: 0,0,0,0px important;
+    BACKGROUND-IMAGE: none;
+}
+
+.tabrow0 A:hover,
+.tabrow0 A:hover span,
+.tabrow0 .here A:hover,
+.tabrow0 .here A:hover span {
+    BACKGROUND-IMAGE: none
+}
+
+.tabrow0 .here A:link,
+.tabrow0 .here A:visited {
+	/* has to override styles.css 'position:relative', otherwise the active tab title disappears on IE6/7 */
+    position: static;
+}
+.tabrow0 ul a {
+    PADDING-LEFT: 0px;
+}
+
+div.tabrow1 {
+/* without that, IE will leave a short line floating, when there's ho secondary menu */
+	#right: 0px;   /* IE only */
+	#width: 910px; /* IE only */
+	/*margin-top:-8px;*/
+}
+
+UL.tabrow1 {
+    right: 0px;
+    width: 910px;
+
+/* must have absolute width here, otherwise IE makes a total mess */
+	min-width: 100%;
+}
+
+UL.tabrow1  li {
+    float: right;
+}
+
+.tabtree {
+	/* give some space below the tabs row (when there's a secondary row) on firefox */
+	margin-bottom:15px;
+
+	/* has to override 'height:100%' in styles_ie6.css, otherwise it causes a huge height in quiz report overview, e.g.: moodle/mod/quiz/report.php?q=14&mode=overview */
+    height: auto !important;
+}
+
+.tabtree * {
+    width: auto;
+}
+
+/* notify-problem line gets covered by secondary tabs line (tabrow1), add some height to the line **** */
+.notifyproblem {
+	line-height: 40px;
+}
+
+
+
+.tabrow0 li {
+  margin-left: 0;
+}
+
+.tabrow0 li.first {
+  margin-right: -4px;
+}
+
+.tabrow0 li.onerow {
+  margin-right: 0;
+}
+
+.tabrow0 a {
+  display: inline-block;
+  padding: 8px 0 0.35em 13px;
+  line-height: 1.5em;
+}
+
+.tabrow0 a span {
+  padding: 10px 1em 10px 0;
+}
+
+.tabrow0 div,
+.tabrow0 ul {
+  top: 2.6em;
+  padding: 0.2em 0;
+}
+
+.tabrow0 div.empty {
+  margin-right: 0;
+}
+
+.sideblock {
+  overflow: hidden;
+}
+
+.sideblock .content {
+  word-wrap: break-word;
+}
+
+/*fix for misalignment of text fields in ie */
+form.mform input[type=text],
+form.mform input[type=file],
+form.mform input[type=password] {
+ margin-left: -10px;
+}
+
+form.mform textarea {
+ margin-left: -10px;
+}
+
+form.mform .fcheckbox input {
+  margin-left: -3px;
+}
+
+div.tabcontainer_rtl{
+float:right;
+width:910px;
+margin:0,0,0,0;
+}
+
+
+div.pageAttr_popup div.tabcontainer_rtl{
+width:400px !important;
+
+}
+
+
+.tabrow0 .here a.nolink {
+  position:static !important;
+  z-index:102;
+}

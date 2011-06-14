@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <?php echo $meta ?>
+	<!-- openu opal moodle page -->
+
+    <meta name="keywords" content="moodle, <?php echo $title ?> " />
+    <title><?php echo $title ?></title>
+    <link rel="shortcut icon" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/custom.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/styles_layout.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $CFG->themewww .'/'. current_theme() ?>/styles_color.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $CFG->themewww .'/'. current_theme().'/'.get_string('thisdirection')?>/directionCustom.css" />
+
+	<?php 
+	echo"<!--[if IE 7]>";
+		if (get_string('thisdirection')=="rtl"){
+	    echo'<link rel="stylesheet" type="text/css" href="'. $CFG->themewww .'/'. current_theme().'/styles_ie7_tabs_rtl.css"/>';
+		}else{
+		echo'<link rel="stylesheet" type="text/css" href="'. $CFG->themewww .'/'. current_theme().'/styles_ie7_tabs_ltr.css"/>';
+		}
+		echo'<link rel="stylesheet" type="text/css" href="'. $CFG->themewww .'/'. current_theme().'/styles_ie7.css"/>';
+		echo '<![endif]-->';
+
+ include("$CFG->javascript"); 
+ ?>
+     <?php 
+				global $course;
+		?>
+
+</head>
+<body<?php
+    
+    echo " $bodytags";
+    if ($focus) {
+        echo " onload=\"setfocus()\"";
+    }
+    ?>
+>
+<?php
+global $CFG;
+if(isset($CFG->googleanalytics)){
+	if($CFG->googleanalytics==='1'){
+		 include_once("$CFG->dirroot/ouil/js/analyticstracking.php");
+	}
+}
+
+$ouilhelp="";
+
+if(isset($CFG->ouilhelp)){
+$ouilhelp=$CFG->ouilhelp;
+}
+
+
+?>
+
+<div id="openupage" class= "page" >
+<?php
+/*$courseshortname="";
+if(isset($COURSE->shortname)){
+	$courseshortname=$COURSE->shortname;
+}
+$pos = strpos($courseshortname, "-");
+$course_id= "";
+$semester= "";
+$semesterHeader="";
+$course_idStr="";
+if ($pos !== false) {
+	$course_idStr=' - <span > '.substr($courseshortname, 1,$pos-1)."</span>";
+	$semester= substr($courseshortname,$pos+1);
+	$pos = strlen($semester);
+	if ($pos >4) {
+	$semesterHeader=substr($semester, 0,4);
+	$semesterChar=$semester=substr($semester, 4,1);
+	if ($semesterChar=='a'){
+		$semesterHeader=$semesterHeader.get_string('change_a','format_ouil');
+	}
+	if ($semesterChar=='b'){
+		$semesterHeader=$semesterHeader.get_string('change_b','format_ouil');
+	}
+	if ($semesterChar=='c'){
+		$semesterHeader=$semesterHeader.get_string('change_c','format_ouil');
+	}
+	$semesterHeader='<span class="semesterSpan">'.get_string('semester','format_ouil')." ".$semesterHeader."</span>";
+
+	}
+
+
+}*/
+/***************************************************************/
+
+
+
+
+ $teachersLine="";
+			 
+				 global $COURSE;
+ /* 				$blockslinks="";
+		  		$course_id= $courseshortname;
+			    $pos = strpos($courseshortname, "-");
+				if ($pos !== false) {
+				    $course_id= substr($courseshortname, 0,$pos);
+				    $semester= substr($courseshortname,$pos+1);
+					$query="SELECT teur_1, teur_2  , sug_rashuma FROM ".$CFG->prefix."ouil_course_details       WHERE course='".$course_id."' AND semester='".$semester."' AND sug_rashuma IN ('0007','0009')       ORDER BY sug_rashuma";
+		 
+					$teacherCounter=0;
+					$teacherDefactoCounter=0;
+					$teacherList="";
+					$teacherListLabel="";
+					$teacherDefactoList="";
+					$teacherDefactoListLabel="";
+					$p_usermailto="";
+					if ($coursemodules = get_records_sql($query)){
+                             $cmcount = count($coursemodules);
+							foreach ($coursemodules as $cm) {
+
+								if($cm->sug_rashuma=="0007"){
+									$p_username=$cm->teur_1;
+									$p_usermailto=$cm->teur_1;
+									$user = get_complete_user_data('username', $p_username);
+									if (!empty($user)){
+										$p_usermailto= "<a href=\"../user/view.php?id=$user->id&course=".$COURSE->id."\">".fullname($user)."</a>";
+									}
+									$teacherList=$teacherList."  ".$p_usermailto;
+								if($teacherCounter==0){
+									$teacherListLabel=$cm->teur_2 ;
+									$findme=get_string('teacher_f_search','ouilHeader') ;
+									$pos = strpos($teacherListLabel, $findme);
+									if ($pos === false) {
+										$teacherListLabel=get_string('teacher_m_label','ouilHeader').":";
+									}else{
+											$teacherListLabel=get_string('teacher_f_label','ouilHeader').":";
+									}
+								}else{
+									$teacherListLabel=get_string('teachers_label','ouilHeader') .":";
+								}
+								$teacherCounter=$teacherCounter+1;
+							}
+							if($cm->sug_rashuma=="0009"){
+								$p_username=$cm->teur_1;
+								$p_usermailto=$cm->teur_1;
+							    $user = get_complete_user_data('username', $p_username);
+								if (!empty($user)){
+											$p_usermailto= "<a href=\"../user/view.php?id=$user->id&course=".$COURSE->id."\">".fullname($user)."</a>";
+								}
+								$teacherDefactoList=$teacherDefactoList."  ".$p_usermailto;
+								if($teacherDefactoCounter==0){
+									$teacherDefactoListLabel=$cm->teur_2 ;
+									$findme=get_string('teacher_f_de_facto_search','ouilHeader') ;
+									$pos = strpos($teacherDefactoListLabel, $findme);
+									if ($pos === false) {
+										$teacherDefactoListLabel=get_string('teacher_m_de_facto_label','ouilHeader').":";
+									}else{
+										$teacherDefactoListLabel=get_string('teacher_f_de_facto_label','ouilHeader').":";
+									}
+
+								}else{
+									$teacherDefactoListLabel=get_string('teachers_de_facto_label','ouilHeader') .":";
+								}
+								$teacherDefactoCounter=$teacherDefactoCounter+1;
+							}
+			         }//foreach
+	
+				 if($teacherCounter>0){
+					 $teacherList= $teacherListLabel. " ".$teacherList;
+				 }
+				 if($teacherDefactoCounter>0){
+					 $teacherDefactoList= $teacherDefactoListLabel. "       ".$teacherDefactoList;
+				 }
+
+				$blockslinks = $teacherList . "&nbsp;&nbsp;&nbsp; " .$teacherDefactoList;
+            }
+		}
+		 $teachersLine   .= '<span class="semesterSpan" >'.$blockslinks.'</span>';*/
+/*******************************************************************/
+
+
+
+//$logoImgName=get_string('logoImgName', 'ouilHeader')
+//$logoImgWidth=get_string('logoImgWidth', 'ouilHeader')
+
+$opIMG='<IMG src="'.$CFG->themewww .'/'.current_theme().'/blue/logoop.jpg"  alt="'.get_string('curentSection','format_ouil').'"  >';
+
+global $PAGE;
+$widthLogo="150";
+
+/* plant cookie for other openu web applications, added by Uri 6 March 2011
+ * 
+ */ 
+/*if( isset($PAGE->type) && isset($course_id) && isset($semester)   ){
+    if($PAGE->type == 'course-view'){   // front page of course only
+        if( preg_match("/^\d{4}[aAbBcC]\d*$/", $semester) && preg_match("/^[cC]\d{5}$/", $course_id)  ){
+    		$cookiename='TELEM_semester_course';
+		    $value="$semester/$course_id";
+		    $cookie_life = time() + 3600*24*1;    // 1 day = 3600 seconds * 24 (change the 1 to the number of days you want)
+			$path = '/';
+		    $hostname = '.openu.ac.il';
+		    setrawcookie($cookiename, $value, $cookie_life, $path, $hostname);
+        }
+	}
+}*/
+/* */
+
+
+$headermain="headermain2";
+if (get_string('thisdirection')=="ltr"){
+$widthLogo="205";
+}
+$tableHeaderR="tableHeaderR";
+$tableHeaderC="tableHeaderC";
+$tableHeaderL="tableHeaderL";
+$mainCoursePage=true;
+if (!empty($PAGE->type)) {
+if ($PAGE->type!="course-view"){
+		$tableHeaderR=$tableHeaderR."Min";
+		$tableHeaderC=$tableHeaderC."Min";
+		$tableHeaderL=$tableHeaderL."Min";
+		$widthLogo=50;
+		$headermain=$headermain."Min";
+		$mainCoursePage=false;
+	}
+}else{
+	$tableHeaderR=$tableHeaderR."Min";
+	$tableHeaderC=$tableHeaderC."Min";
+	$tableHeaderL=$tableHeaderL."Min";
+	$headermain=$headermain."Min";
+	$widthLogo=50;
+		$mainCoursePage=false;
+}
+?>
+
+<div  class="headerContainer" >
+<div  class="headeContainer" >
+<table   class ="headeContainer"  width="100%" cellpadding="0" cellspacing="0"  ><tr>
+<td  width="<?php  echo $widthLogo; ?>" ><a href="http://www.openu.ac.il/" > <div class="<?php echo $tableHeaderR; ?>"  onmouseover="this.style.cursor='hand'"></div></a></TD>
+<td  class="<?php echo $tableHeaderC; ?>"  valign="middle" >
+<?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
+
+//      if ($home) {  // This is what gets printed on the home page only
+
+$context = get_context_instance(CONTEXT_COURSE, $COURSE->id);
+if(is_inside_frontpage($context)){
+?>
+<h1 class="<?php echo $headermain; ?>" > <?php echo $heading ;	?></h1>
+<?php } else if ($heading) {  // This is what gets printed on any other page with a heading
+?>     
+<h1 class="<?php echo $headermain; ?>" ><?php 
+				if($course){
+//	   echo     '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$course->id.'"><span dir="'.get_string('thisdirection').'">'.$heading.'</span>'.$course_idStr.'</a>'.$semesterHeader;
+	   echo '<a href="'.$CFG->wwwroot.'/course/view.php?id='.$course->id.'"><span dir="'.get_string('thisdirection').'">'.$heading.'</span>'.'</a>';
+	  if( $mainCoursePage===true){
+//		echo $teachersLine;
+	   }
+		  }else{
+		   echo     '&nbsp;';
+		   }
+		?></h1>
+<?php } ?>
+</td>
+<td  class="<?php echo $tableHeaderC; ?>">&nbsp;</td>
+<td  class="<?php echo $tableHeaderL; ?> " width="225" ></TD>
+</tr></table>
+
+
+<?php //Accessibility: breadcrumb trail/navbar now a DIV, not a table.
+      if ($navigation) { // This is the navigation bar with breadcrumbs  ?>
+    <!--div class="navbar clearfix"-->
+    <div class="navbar" >
+	<table    class="navbartable" width="100%" ><TR> <TD valign="top" >
+        <div class="breadcrumb" dir=rtl><?php print_navigation($navigation); ?></div>
+		</TD><TD align="left" >
+        <div class="navbutton">
+        <?php
+             $search_button = get_string('go', 'block_search');
+         echo '<form id="searchquery"  style ="display:inline;"  method="get" action="'. $CFG->wwwroot .'/search/query.php">'
+          . '<input id="block_search_q" type="text" name="query_string" />'
+          . '<input type="submit" value="'.$search_button.'" />'
+          . '</form>';
+         ?>
+	 <span ><?php echo $button; ?></span>
+      </div>
+		</TD>
+		<TD valign="top"  class="navbarLinkstd" align="left"><div class="breadcrumb">
+		<?php 
+		echo '<a  class="navbarLinks1" href="'.$ouilhelp.'">'.get_string('help').'</a> <a href="'.$CFG->wwwroot.'/login/logout.php"  class="navbarLinks">'.get_string('logout').'</a>';
+		?>
+		</div >
+		</TD>
+		</TR></TABLE>
+        
+    </div>
+<?php } else if ($heading) { // If no navigation, but a heading, then print a line
+?>
+        <hr />
+<?php } ?>
+
+
+</div> <!-- headerContainer-->
+</div>
+
+
+    <!-- END OF HEADER -->
+    <?php print_container_start(false, '', 'content'); ?>
