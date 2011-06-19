@@ -285,7 +285,9 @@ if(is_inside_frontpage($context)){
 		</TD>
 		<TD valign="top"  class="navbarLinkstd" align="left"><div class="breadcrumb">
 		<?php 
-		echo '<a  class="navbarLinks1" href="'.$ouilhelp.'">'.get_string('help').'</a> <a href="'.$CFG->wwwroot.'/login/logout.php"  class="navbarLinks">'.get_string('logout').'</a>';
+		echo '<a  class="navbarLinks1" href="'.$ouilhelp.'">'.get_string('help').'</a>';
+                if(isloggedin())
+                    echo '<a href="'.$CFG->wwwroot.'/login/logout.php"  class="navbarLinks">'.get_string('logout').'</a>';
 		?>
 		</div >
 		</TD>
