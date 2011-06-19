@@ -1,14 +1,15 @@
 
 
 td.tableHeaderR{
-background:url(../images/logoopenglish.jpg)  right no-repeat; 
+background:url(../images/headerback.jpg)  right no-repeat;
+width:150;
 height:77px;
 
 }
 
 div.tableHeaderR{
-background:url(../images/logoopenglish.jpg)  right no-repeat; 
-width:205;
+background:url(../images/headerback.jpg)  repeat-x;
+width:150;
 height:77px;
 }
 
@@ -19,7 +20,7 @@ height:77px;
 text-align:left;
 padding-left:20px;
 }
-td.tableHeaderL{background:url(../images/pictureenglish.jpg)  left no-repeat;
+td.tableHeaderL{background:url(../images/picture.jpg)  left no-repeat;
 height:77px;
 }
 
@@ -27,13 +28,13 @@ height:77px;
 
 
 td.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x;
 height:50px;
 width:35;
 }
 
 div.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x;
 height:50px;
 width:35;
 }
@@ -52,11 +53,11 @@ width:35;
 
 
 td.tableHeaderCMin{
-	background:url(../images/headerback_min.jpg)  right;
+	background:url(../images/headerback_min.jpg)  repeat-x;
     background-repeat:repeat-x;     
 	height:50px;
 }
-td.tableHeaderLMin{background:url(../images/pictureenglish_min.JPG)  left no-repeat;
+td.tableHeaderLMin{background:url(../images/picture_min.jpg)  left no-repeat;
 height:50px;
 }
 
