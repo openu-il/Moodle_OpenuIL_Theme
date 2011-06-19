@@ -40,6 +40,11 @@ width:35;
 }
 
 /*<ou messages_patch*/
+.message 
+{
+	overflow-x: hidden;
+}
+
 .message #openupage
 {
 	width:445px;

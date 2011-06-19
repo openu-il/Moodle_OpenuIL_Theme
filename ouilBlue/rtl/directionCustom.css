@@ -38,10 +38,21 @@ width:35;
 }
 
 /*<ou messages_patch*/
+.message 
+{
+	overflow-x: hidden;
+	direction:ltr;
+}
+
 .message #openupage
 {
 	width:445px;
 }
+
+.message .boxaligncenter
+{
+	width:400px;
+}	
 
 .message .headerContainer
 {
