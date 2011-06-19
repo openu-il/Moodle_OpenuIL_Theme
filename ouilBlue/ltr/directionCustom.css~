@@ -38,17 +38,6 @@ height:50px;
 width:35;
 }
 
-/*<ou messages_patch*/
-.message #openupage
-{
-	width:445px;
-}
-
-.message .headerContainer
-{
-	display:none;
-}
-/*>*/
 
 
 td.tableHeaderCMin{
@@ -436,11 +425,11 @@ text-align:left;
 }
 
 .logo  {
-    background: url("../images/logo.png") no-repeat left;
+    background: url("images/logo.png") no-repeat left;
     height: 70px;
 }
 
 .logo_min  {
-    background: url("../images/logo_min.png") no-repeat left;
+    background: url("images/logo_min.png") no-repeat left;
     height: 45px;
 }

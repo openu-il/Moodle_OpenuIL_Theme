@@ -7,8 +7,8 @@
 
 echo ' <div >'.$menu.'</div>';
 
-//$opGif= $CFG->themewww .'/'.current_theme().'/images/shoham.gif';
-//	  echo  '<IMG SRC="'.$opGif.'" width="201" height="31" alt= "  shoham logo">';
+$opGif= $CFG->themewww .'/'.current_theme().'/images/shoham.gif';
+	  echo  '<IMG SRC="'.$opGif.'" width="201" height="31" alt= "  shoham logo">';
 
     echo '<p class="helplink">';
     echo page_doc_link(get_string('moodledocslink'));

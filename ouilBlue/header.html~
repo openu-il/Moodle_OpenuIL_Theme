@@ -209,7 +209,6 @@ $widthLogo="205";
 $tableHeaderR="tableHeaderR";
 $tableHeaderC="tableHeaderC";
 $tableHeaderL="tableHeaderL";
-$logo="logo";
 $mainCoursePage=true;
 if (!empty($PAGE->type)) {
 if ($PAGE->type!="course-view"){
@@ -218,7 +217,6 @@ if ($PAGE->type!="course-view"){
 		$tableHeaderL=$tableHeaderL."Min";
 		$widthLogo=50;
 		$headermain=$headermain."Min";
-                $logo.="_min";
 		$mainCoursePage=false;
 	}
 }else{
@@ -226,7 +224,6 @@ if ($PAGE->type!="course-view"){
 	$tableHeaderC=$tableHeaderC."Min";
 	$tableHeaderL=$tableHeaderL."Min";
 	$headermain=$headermain."Min";
-        $logo.="_min";
 	$widthLogo=50;
 		$mainCoursePage=false;
 }
@@ -235,7 +232,7 @@ if ($PAGE->type!="course-view"){
 <div  class="headerContainer" >
 <div  class="headeContainer" >
 <table   class ="headeContainer"  width="100%" cellpadding="0" cellspacing="0"  ><tr>
-<td  width="<?php  echo $widthLogo; ?>" ><a href="http://www.company.com/" > <div class="<?php echo $tableHeaderR; ?>"  onmouseover="this.style.cursor='hand'"><div class="<?php echo $logo;?>"></div></div></a></TD>
+<td  width="<?php  echo $widthLogo; ?>" ><a href="http://www.company.com/" > <div class="<?php echo $tableHeaderR; ?>"  onmouseover="this.style.cursor='hand'"><div class="logo"></div></div></a></TD>
 <td  class="<?php echo $tableHeaderC; ?>"  valign="middle" >
 <?php //Accessibility: 'headermain' is now H1, see theme/standard/styles_layout.css: .headermain
 

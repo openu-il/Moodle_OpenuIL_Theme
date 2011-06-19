@@ -1,14 +1,14 @@
 
 
 td.tableHeaderR{
-background:url(../images/logoop.jpg)  right no-repeat; 
+background:url(../images/headerback.jpg)  right no-repeat; 
 width:150;
 height:77px;
 
 }
 
 div.tableHeaderR{
-background:url(../images/logoop.jpg)  right no-repeat; 
+background:url(../images/headerback.jpg)  repeat-x; 
 width:150;
 height:77px;
 }
@@ -26,21 +26,31 @@ height:77px;
 
 
 td.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x; 
 height:50px;
 width:35;
 }
 
 div.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x; 
 height:50px;
 width:35;
 }
 
+/*<ou messages_patch*/
+.message #openupage
+{
+	width:445px;
+}
 
+.message .headerContainer
+{
+	display:none;
+}
+/*>*/
 
 td.tableHeaderCMin{
-	background:url(../images/headerback_min.jpg)  right;
+	background:url(../images/headerback_min.jpg)  repeat-x;
     background-repeat:repeat-x;     
 	height:50px;
 }
@@ -415,4 +425,14 @@ text-align:left;
 
 div.defaulttemplate{
 text-align:right;
+}
+
+.logo  {
+    background: url("../images/logo.png") no-repeat right;
+    height: 70px;
+}
+
+.logo_min  {
+    background: url("../images/logo_min.png") no-repeat right;
+    height: 45px;
 }

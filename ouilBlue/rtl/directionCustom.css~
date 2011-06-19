@@ -1,14 +1,15 @@
 
 
 td.tableHeaderR{
-background:url(../images/logoopenglish.jpg)  right no-repeat; 
+background:url(../images/headerback.jpg)  right no-repeat; 
+width:150;
 height:77px;
 
 }
 
 div.tableHeaderR{
-background:url(../images/logoopenglish.jpg)  right no-repeat; 
-width:205;
+background:url(../images/headerback.jpg)  repeat-x; 
+width:150;
 height:77px;
 }
 
@@ -16,10 +17,8 @@ td.tableHeaderC{
 	background:url(../images/headerback.jpg)  right;
     background-repeat:repeat-x;     
 height:77px;
-text-align:left;
-padding-left:20px;
 }
-td.tableHeaderL{background:url(../images/pictureenglish.jpg)  left no-repeat;
+td.tableHeaderL{background:url(../images/picture.jpg)  left no-repeat;
 height:77px;
 }
 
@@ -27,36 +26,25 @@ height:77px;
 
 
 td.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x; 
 height:50px;
 width:35;
 }
 
 div.tableHeaderRMin{
-background:url(../images/logoop_min.jpg)  right no-repeat; 
+background:url(../images/headerback_min.jpg)  repeat-x; 
 height:50px;
 width:35;
 }
 
-/*<ou messages_patch*/
-.message #openupage
-{
-	width:445px;
-}
-
-.message .headerContainer
-{
-	display:none;
-}
-/*>*/
 
 
 td.tableHeaderCMin{
-	background:url(../images/headerback_min.jpg)  right;
+	background:url(../images/headerback_min.jpg)  repeat-x;
     background-repeat:repeat-x;     
 	height:50px;
 }
-td.tableHeaderLMin{background:url(../images/pictureenglish_min.JPG)  left no-repeat;
+td.tableHeaderLMin{background:url(../images/picture_min.jpg)  left no-repeat;
 height:50px;
 }
 
@@ -64,15 +52,15 @@ height:50px;
 
 div.breadcrumb {
 	width:100%;
-	text-align:left;
+	text-align:right;
 }
 
 div.breadcrumb   li{
-/*float:left;*/
+float:right;
 }
 
-DT.message {background:url(../images/icon_hodaot.gif) top left  no-repeat; padding:0 0 0 25px;}
-DT.newMessage {background:url(/blocks/ouil_news_items/pix/new_img.gif) top left  no-repeat; padding:0 0 0 25px;}
+DT.message {background:url(../images/icon_hodaot.gif) center right  no-repeat; padding:0 25px 0 0;}
+DT.newMessage {background:url(/blocks/ouil_news_items/pix/new_img.gif) center right  no-repeat; padding:0 25px 0 0;}
 
 
 
@@ -80,33 +68,33 @@ DT.newMessage {background:url(/blocks/ouil_news_items/pix/new_img.gif) top left 
 
 
 .sideblock .header .hide-show-image {
-   float:left;
+   float:right;
 }
 .sideblock  div.commands {
-	float:right;
-	text-align:right !important;
+	float:left;
+	text-align:left !important;
 }
 
 
 
 tr.cps  .openSection{
-		background-position:right;
+		background-position:left;
 }
 
 tr.cpsTest  .openSection{
-		background-position:right;
+		background-position:left;
 }
 
 
 
 
 tr.cps  .closeSection{
-		background-position:right;
+		background-position:left;
 }
 
 tr.cpsTest  .closeSection{
 		text-indent:12px;
-		background-position:right;
+		background-position:left;
 }
 
 
@@ -114,31 +102,32 @@ tr.cpsTest  .closeSection{
 
 
 tr.cps2  .openSection{
-		background-position:right;
+		background-position:left;
 }
 
 
 tr.cps2 .closeSection{
-		background-position: right;
+		background-position: left;
 }
 
 
 
 tr.cpsFocus  .openSection{
-		background-position:right;
+		background-position:left;
+
 }
 
 tr.cpsFocus  .closeSection{
-		background-position:right;
+		background-position:left;
 }
 
 tr.cpsFocusTest  .openSection{
-		background-position:right;
-			text-indent:12px;
+		background-position:left;
+		text-indent:12px;
 }
 
 tr.cpsFocusTest  .closeSection{
-		background-position:right;
+		background-position:left;
 		text-indent:12px;
 }
 
@@ -146,13 +135,13 @@ tr.cpsFocusTest  .closeSection{
 /******                                    *********************/
 tr.cps .td_right {
  background-image:url(../images/koteretDownleft.jpg);
-   background-position:top right;
+   background-position:top left;
    background-repeat:no-repeat;
     background-position:bottom;
 }
 
 tr.cpsTest .td_right {
-   background-position:top right;
+   background-position:top left;
    background-repeat:no-repeat;
     background-position:bottom;
 }
@@ -162,13 +151,13 @@ tr.cpsTest .td_right {
 tr.cps .td_left{
 
  background-image:url(../images/koteretDownright.jpg);
-   background-position:top left;
+   background-position:top right;
    background-repeat:no-repeat;
     background-position:bottom;
 }
 
 tr.cpsTest .td_left{
-   background-position:top left;
+   background-position:top right;
    background-repeat:no-repeat;
     background-position:bottom;
 }
@@ -176,14 +165,14 @@ tr.cpsTest .td_left{
 tr.cps2 .td_right {
 
 	  background-image:url(../images/koteretDownleft.jpg);
-   background-position:top right;
+   background-position:top left;
    background-repeat:no-repeat;
     background-position:bottom;
 }
 
 tr.cps2 .td_left{
 	 background-image:url(../images/koteretDownright.jpg);
-   background-position:top left;
+   background-position:top right;
    background-repeat:no-repeat;
     background-position:bottom;
 }
@@ -191,13 +180,13 @@ tr.cps2 .td_left{
 
 tr.cpsFocus .td_right {
     background-image:url(../images/koteretDownleftRollOver.jpg);
-   background-position:top right;
+   background-position:top left;
    background-repeat:no-repeat;
     background-position:bottom;
 }
 
 tr.cpsFocusTest .td_right {
-   background-position:top right;
+   background-position:top left;
    background-repeat:no-repeat;
     background-position:bottom;
 }
@@ -222,7 +211,7 @@ tr.cpsFocusTest .td_left{
 /*-----------     */
 
 tr.cps  .openSection{
-		background-position:left !important;
+		background-position:right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
@@ -230,14 +219,14 @@ tr.cps  .openSection{
 
 
 tr.cps  .closeSection{
-		background-position: left !important;
+		background-position: right !important;
 			padding-left:1em;
 			padding-right:1em;
 }
 
 
 tr.cpsTest  .openSection{
-		background-position:left !important;
+		background-position:right !important;
 		padding-left:1em;
 		padding-right:1em;
 		text-indent:12px;
@@ -246,7 +235,7 @@ tr.cpsTest  .openSection{
 
 
 tr.cpsTest  .closeSection{
-		background-position: left !important;
+		background-position: right !important;
 			padding-left:1em;
 			padding-right:1em;
 }
@@ -256,40 +245,40 @@ tr.cpsTest  .closeSection{
 
 
 tr.cps2  .openSection{
-		background-position: left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
 
 
 tr.cps2 .closeSection{
-		background-position: left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
 
 
 tr.cpsFocus  .openSection{
-		background-position: left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
 
 tr.cpsFocus  .closeSection{
-		background-position:left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
 
 
 tr.cpsFocusTest  .openSection{
-		background-position: left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
 
 tr.cpsFocusTest  .closeSection{
-		background-position: left !important;
+		background-position: right !important;
 		padding-left:1em;
 		padding-right:1em;
 }
@@ -299,7 +288,7 @@ tr.cpsFocusTest  .closeSection{
 
 
 span.current_section{
-background-position:left;
+background-position:right;
 	padding-right:1.5em;
 	margin-right:1.5em;
 }
@@ -332,17 +321,13 @@ div.title h2{
 
 }
 a.navbarLinks {
-	border-left:1px solid gray ;
-	padding-right:5px;
-}
-
-
-
-div.news_items_container{
+	border-right:1px solid gray ;
 	padding-left:5px;
 }
 
-
+div.news_items_container{
+	padding-right:5px;
+}
 
 #actionOnallSection{
 		text-decoration: none;
@@ -366,81 +351,78 @@ padding-left:15px;
 
 
 div.news_items dl{
-margin-left:3px;
+margin-right:3px;
 }
 
 div.news_items dd{
-margin-left:25px;
+margin-right:25px;
 }
 
 a.setAllsectionOpen{
-    background-position:left;
+    background-position:right;
 }
 
 
 a.setAllsectionClose{
-  background-position:left;
+  background-position:right;
 }
-
-
-
 
 
  body {
 	text-align:center !important;
 }
+
 #openupage{
-	text-align:left !important;
+	text-align:right !important;
+	direction:rtl;
 	}
 
+
 span.nonews{
-padding-left:25px;
+padding-right:25px;
 }
-
-td.navbarLinkstd{
-	width:100px;
-}
-
+/*td.navbarLinkstd{
+	width:70px;
+}*/
 td.middle_headerleft
 {
-background:url(../images/koteretlright.jpg);
-  }
+  background:url(../images/koteretleft.jpg);
+}
 
-  td.middle_headerright
+td.middle_headerright
 {
-  background:url(../images/koteretleft.jpg);  
- }
+  background:url(../images/koteretlright.jpg);
+}
 
- 
 div.book_content{
-text-align:left;
+text-align:right;
 }
 p.book_chapter_title{
-text-align:left;
+text-align:right;
 }
 
 div.book_toc_none{
-text-align:left;
+text-align:right;
 }
 
 div.headererrorouil{
-   background-position:top left;
+   background-position:top right;
 }
-
 
 td.oppositedir{
-text-align:right;
-}
-div.defaulttemplate{
 text-align:left;
 }
 
+div.defaulttemplate{
+text-align:right;
+}
+
 .logo  {
-    background: url("../images/logo.png") no-repeat left;
+    background: url("images/logo.png") no-repeat right;
     height: 70px;
 }
 
 .logo_min  {
-    background: url("../images/logo_min.png") no-repeat left;
+    background: url("images/logo_min.png") no-repeat right;
     height: 45px;
 }
