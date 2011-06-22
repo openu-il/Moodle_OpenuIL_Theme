@@ -44,13 +44,13 @@ if(isset($CFG->googleanalytics)){
 		 include_once("$CFG->dirroot/ouil/js/analyticstracking.php");
 	}
 }
-
+/*
 $ouilhelp="";
 
 if(isset($CFG->ouilhelp)){
 $ouilhelp=$CFG->ouilhelp;
 }
-
+*/
 
 ?>
 
@@ -285,7 +285,7 @@ if(is_inside_frontpage($context)){
 		</TD>
 		<TD valign="top"  class="navbarLinkstd" align="left"><div class="breadcrumb">
 		<?php 
-		echo '<a  class="navbarLinks1" href="'.$ouilhelp.'">'.get_string('help').'</a>';
+//		echo '<a  class="navbarLinks1" href="'.$ouilhelp.'">'.get_string('help').'</a>';
                 if(isloggedin())
                     echo '<a href="'.$CFG->wwwroot.'/login/logout.php"  class="navbarLinks">'.get_string('logout').'</a>';
 		?>
